@@ -11,6 +11,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: NotoSansCJKkr-Regular
 }
 
@@ -179,7 +180,7 @@ ul {
 .submenu a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .submenu li:hover {
@@ -811,8 +812,6 @@ ul {
 }
 
 
-
---------------------------------------------------
 @media (max-width:1279px){}
 @media (max-width:1279px) {
     .inner {
@@ -838,6 +837,7 @@ ul {
         padding-top: 60px
     }
 
+
     .sub_menu > .side {
         display: none
     }
@@ -854,7 +854,7 @@ ul {
     }
 
     #mainimg {
-        background-image: url(../images/subimg.jpg);
+        background-image: url(../images/subimg.png);
         height: 0px;
         padding-top: calc(1051/768*100%)
     }
@@ -882,7 +882,7 @@ ul {
 
     .bestslider {
         width: 50%;
-        height: 580px;
+        height: auto; padding-bottom: 450px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -892,15 +892,16 @@ ul {
         width: 100%;
         position: relative;
         top: 0;
-        padding-top: calc(510/363*100%);
         margin-left: 25px;
+       
 
     }
 
     .bestslider > .best_list > .slide {
-        width:100%;
+        width:90%;
         position: absolute;
         top: 0;
+        left: 20px;
     }
 
     .bestslider > .best_list > .slide > img {
@@ -992,6 +993,7 @@ ul {
     .vod_set > h2 {
         font-size: 22px;
         padding-top: 80px;
+        width: 83%;margin: 0 auto;
     }
 
     .vod_set > .vodslider {
@@ -1001,7 +1003,6 @@ ul {
     .vod_set > .vodslider > .vod_list > .slide > h4 {
         padding: 40px 10% 60px 10%
     }
-
     .vod_set > .vodslider > .btn_prev {
         display: none
     }
@@ -1012,7 +1013,7 @@ ul {
 
     .vod_set > .vodslider > .vod_list {
         width: 50%;
-        height: 500px;
+        height: 450px;
         overflow: hidden;
     }
 
@@ -1045,8 +1046,8 @@ ul {
     }
 
     .homeliving_set > ul > li {
-        width:18%; margin: 0 auto;
-        padding-bottom: 45px;padding-right: 50px;
+        width:20%; margin: 0 auto;
+        padding-bottom: 45px;padding-right: 5%;
     }
 
     .homeliving_set > ul > li > p {
@@ -1061,9 +1062,9 @@ ul {
         width: 20%;
         padding-left: 10px;
     }
-    .add_set > div{width: 15%;}
+    .add_set > div{width: 20%;font-size: 20px;}
     .board_set > p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .board_set > ul > li.more {
@@ -1134,17 +1135,10 @@ ul {
         margin-top: -40px;
     }
 
-    .bottom_footer > .inner > .copyright > ul > li:nth-child(2) {
-        margin-left: 500px;
-        margin-top: -15px;
-        padding-left: 50px;
-
+    .bottom_footer > .inner > .copyright > ul > li:nth-child(2) {display: none;
     }
 
-    .bottom_footer > .inner > .copyright > ul > li:nth-of-type(3) {
-        margin-left: 350px;
-        margin-top: -15px;
-        padding-left: 70px;
+    .bottom_footer > .inner > .copyright > ul > li:nth-of-type(3) {display: none;
     }
 
     .bottom_footer > .inner > .info > ul > li:first-child > span {
@@ -1224,8 +1218,6 @@ ul {
     }
 
 
-
-
 }
 
 @media (max-width:499px){}
@@ -1268,24 +1260,22 @@ ul {
     .bottom_footer{padding-top: 18px;}
     .bottom_footer > .inner > .copyright > ul > li:first-child{margin-left: 20px;}
 
-    .bottom_footer > .inner > .copyright > ul > li:nth-child(2){margin-left: 0px; padding-left: 370px;}
+    .bottom_footer > .inner > .copyright > ul > li:nth-child(2){display: none;}
 
-    .bottom_footer > .inner > .copyright > ul > li:nth-of-type(3){margin-left: 160px;}
+    .bottom_footer > .inner > .copyright > ul > li:nth-of-type(3){margin-left: 0px;margin-top: 10px;}
     
     .bottom_footer > .inner > .info > ul > li{
     display: block;font-size: 11px;}
     
     .top_footer > .inner > ul > li{font-size: 7px;}
-    .top_footer > .inner > ul{padding-left: 7%;}
+
     
     .top_footer > .inner > ul > li{margin-right: -25px;}
     .top_footer > .inner > ul > li:last-child{display: none;}
     .bottom_footer > .inner > .info > ul > li:first-child > span{font-size: 12px;}
     
     .bottom_footer > .inner > .info{width: 60%;
-        float: left;margin-left: 90px;position: absolute;top: 60px;}
-    
-    
+        float: left;margin-left: 150px;position: absolute;top: 0px;}
     
     .bottom_footer > .inner > .copyright > p{margin-left: 125px;}
     

@@ -8,7 +8,7 @@
     font-family: 'NotoSansCJKkr-Regular';
     src: url("font/NotoSansCJKkr-Regular.otf") format("opentype");
 }
-
+wrap{overflow-x: hidden;}
 body {
     font-family: NotoSansCJKkr-Regular
 }
@@ -713,16 +713,19 @@ ul {
     .last_header > .inner > .last_list{background-color: #1b375e; width: 100%;}
     .last_list li{margin-right: 0;}
     .last_list li select{background-color: #1b375e; color: #fff;}
-    .bottom_header{}
 
-    #mainimg {
+  #mainimg {
         background-image: url(../images/mobile2_main.jpg);
-        height: 325px
+        height: 325px;
+        padding-top: 0;
     }
-
+    
+    .mainimg_top{width: 100%;}
+    
     .mainimg_top h1 {
         font-size: 26px;
-        margin-top: -30px;
+        margin-top: -30px
+
     }
 
     .mainimg_top p {
@@ -732,7 +735,8 @@ ul {
     }
 
     .mainsub {
-        margin-top: 20px;
+        margin-top:50px;
+        width: 40%;
     }
 
 
@@ -791,7 +795,7 @@ ul {
 
 
     .all_about .cont {
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
         float: none;
         height: 180px;
@@ -801,7 +805,7 @@ ul {
     .cont p {
         font-size: 12px;
         margin-top: 10px;
-        margin-left: -40px;
+
     }
 
     .all_about h3 {
@@ -810,9 +814,11 @@ ul {
     }
 
     .cont h4 {
-        margin: -5px 0 -30px -30px;
-        font-size: 18px;
+        margin: -5px 0 -30px 0px;
+        font-size: 22px;
     }
+    .cont p{font-size: 15px;}
+    .cont img{margin-left: 38%}
 
     .btn {
         margin-left: 0px;
@@ -876,10 +882,7 @@ ul {
     }
 
     .bottom_footer > .inner > .copyright > ul > li:nth-child(2) {
-        position: absolute;
-        top: 120px;
-        left: 500px;
-        padding-left: 35px
+       display: none;
     }
 
     .bottom_footer > .inner > .copyright > ul > li:nth-of-type(3) {
@@ -905,4 +908,72 @@ ul {
         margin-top: 45px;
         margin-left: 260px;
     }
+}
+
+
+
+
+@media (max-width:499px){
+    
+    
+    #header{height: 90px;}
+    .inner{height: 90px;}
+    .mainimg_top h1{font-size: 38px;}
+    .mainsub{width: 70%;margin-top:30px;}
+    .besttitle > h2{width: 77%}
+    .besttitle:before{display: none;}
+    
+    .best_set{margin-top: 50px;}
+    .cont img{ width: 30%;margin-left: 30%;}
+.bestslider{height:450px;width: 80%;}
+    .besttitle > h2{margin-left: 0;}
+    .bestslider > .best_list > .slide > img{width: 75%;}
+    .besttitle > h2{font-size: 29px;}
+    .bestslider > .best_list{margin-left: 10px;}
+    .bestslider > .btn_next{margin-right: 0px;}
+
+
+    .banner_set > .inner > ul > li > p{font-size: 16px;}
+    
+    
+    .vod_set{height: 0px;}
+    .vod_set > .vodslider > .vod_list > .slide > h4{padding-bottom: 300px;}
+    .homeliving_set{height: 400px;}
+    .homeliving_set > ul{width:70%;}
+    .homeliving_set > ul > li{padding-right: 0px;width: 50%;}
+    
+    .add_set{height: 300px;}
+    .add_set > p{font-size: 17px;width: 80%;margin: 0 auto;}
+
+    .add_set > div{width: 25%;font-size: 17px;}
+
+
+    .board_set{height: 80px;font-size: 12px;}
+    .board_set > p{padding-left: 10px;}
+    .board_set > ul > li.date{display: none;}
+    #footer{position: relative;}
+    .bottom_footer{padding-top: 18px;}
+    .bottom_footer > .inner > .copyright > ul > li:first-child{margin-left: 20px;}
+
+    .bottom_footer > .inner > .copyright > ul > li:nth-child(2){margin-left: 0px; padding-left: 370px;}
+
+    .bottom_footer > .inner > .copyright > ul > li:nth-of-type(3){margin-left: 160px;}
+    
+    .bottom_footer > .inner > .info > ul > li{
+    display: block;font-size: 11px;}
+    
+    .top_footer > .inner > ul > li{font-size: 7px;}
+    .top_footer > .inner > ul{padding-left: 7%;}
+    
+    .top_footer > .inner > ul > li{margin-right: -25px;}
+    .top_footer > .inner > ul > li:last-child{display: none;}
+    .bottom_footer > .inner > .info > ul > li:first-child > span{font-size: 12px;}
+    
+    .bottom_footer > .inner > .info{width: 60%;
+        float: left;margin-left: 90px;position: absolute;top: 60px;}
+    
+    
+    
+    .bottom_footer > .inner > .copyright > p{margin-left: 125px;}
+    .bottom_footer > .inner > .info > ul > li{display: none;}
 }
